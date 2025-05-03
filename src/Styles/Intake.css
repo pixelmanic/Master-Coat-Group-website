@@ -1,0 +1,64 @@
+.intake {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: auto;
+  padding: 20px;
+}
+
+.careers-para {
+  max-width: 720px;
+}
+
+.intake-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.intake-title {
+  margin-bottom: 20px;
+}
+
+.intake-container h1 {
+  color: black;
+  padding-bottom: 10px;
+}
+
+.form-label {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.form-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #f9f9f9;
+  border: 1px solid black;
+  padding: 10px 40px 10px 12px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  width: 100%;
+
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 140 140' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='30,50 70,90 110,50' stroke='%23333' stroke-width='15' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 14px;
+}
+
+.form-select option {
+    cursor: pointer;
+}
+
+@media (max-width: 528px) {
+  .intake-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

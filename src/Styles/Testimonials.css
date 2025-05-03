@@ -1,0 +1,271 @@
+#testimonials-section {
+  background-color: #162415;
+  min-height: 100vh;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.test-top {
+  width: 75%;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.test-top::before {
+  color: white;
+  display: block;
+  content: "\f10e";
+  width: 80px;
+  height: 80px;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 14px;
+  font-size: 36px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto 60px;
+}
+
+.test-middle {
+  width: 75%;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  text-align: center;
+  color: white;
+}
+
+.test-bottom {
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.mySwiper {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  text-align: center;
+  width: 753px !important;
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+.testimonial-content {
+  text-align: center;
+  margin: 0 auto;
+  font-style: italic;
+  line-height: 1.8;
+  width: 75% !important;
+  font-size: 2rem;
+  font-style: normal;
+  font-family: Poppins600;
+  line-height: 1.25;
+  color: white;
+}
+
+.testimonial-text {
+  margin-bottom: 20px;
+}
+
+.testimonial-text::before {
+  content: open-quote;
+  display: inline;
+}
+
+.testimonial-text::after {
+  content: close-quote;
+  display: inline;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  font-style: normal;
+  color: white;
+  font-size: 1.6rem;
+  padding-top: 20px;
+}
+
+.testimonial-passion {
+  font-size: 1rem;
+  font-style: normal;
+  font-family: Poppins400;
+  line-height: 1.25;
+  text-transform: none;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Swiper Pagination Bullets */
+.swiper-pagination-bullet {
+  background: transparent;
+  border: 1px solid white;
+  opacity: 1;
+  width: 18px;
+  height: 18px;
+}
+
+.swiper-pagination-bullet-active {
+  background: white;
+  border: none;
+}
+
+.arrow-btns {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  transition: all 0.15s ease-in-out;
+  pointer-events: none;
+  z-index: 201;
+}
+
+.custom-prev {
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: #20341e;
+  box-shadow: 0 5px 15px #00000069;
+  transition: all 0.3s ease-in-out;
+  pointer-events: all;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  bottom: auto;
+  left: 140px;
+  width: 60px;
+  height: 60px;
+  border-radius: 0;
+  border: none;
+  font-size: 0;
+  line-height: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.custom-next {
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: #20341e;
+  box-shadow: 0 5px 15px #00000069;
+  transition: all 0.3s ease-in-out;
+  pointer-events: all;
+  position: absolute;
+  left: auto;
+  right: 140px;
+  bottom: auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 0;
+  border: none;
+  font-size: 0;
+  line-height: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.custom-prev::before {
+  content: "\f177";
+  color: #fff;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 24px;
+  line-height: 1;
+  line-height: 50px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.custom-next::before {
+  content: "\f178";
+  color: #fff;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 24px;
+  line-height: 1;
+  line-height: 50px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 1024px) {
+  .testimonial-content {
+    font-size: 1.5rem;
+  }
+
+  .custom-prev {
+    left: 50px;
+  }
+
+  .custom-next {
+    right: 50px;
+  }
+}
+
+
+@media (max-width:768px) {
+  .testimonials-container {
+    padding-top: 40px;
+  }
+  .mySwiper {
+    width: 100% !important;
+  }
+  .testimonial-content {
+    font-size: 1.375rem;
+  }
+  .custom-prev {
+    width: 40px;
+    height: 40px;
+    left: 20px;
+  }
+  .custom-prev::before {
+    font-size: 20px;
+  }
+  .custom-next {
+    width: 40px;
+    height: 40px;
+    right: 20px;
+  }
+  .custom-next::before {
+    font-size: 20px;
+  }
+
+  .testimonial-text {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 528px) {
+  .testimonials-container {
+    padding-bottom: 40px;
+  }
+  .testimonial-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial-content p {
+    width: 90%;
+  }
+}

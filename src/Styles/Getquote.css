@@ -1,0 +1,23 @@
+#getquote-section {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: auto;
+  padding: 20px;
+}
+
+.quote-container {
+  flex-direction: column;
+}
+
+.quote-title h3 {
+  opacity: 1 !important;
+}
+
+@media (max-width: 768px) {
+  .quote-container {
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+}

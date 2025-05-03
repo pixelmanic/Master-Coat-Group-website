@@ -1,0 +1,140 @@
+#about-section {
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  padding: 20px 30px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-container {
+  max-width: 1020px;
+  color: #595959;
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+  position: relative;
+  z-index: 200;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about-content {
+  width: 50%;
+  text-align: left;
+  margin: 0 20px 0 0;
+}
+
+.about-content h3 {
+  font-family: Poppins400;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.about-content h1 {
+  font-size: 2rem;
+  font-family: Poppins600;
+  line-height: 1.25;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+
+.about-content ul {
+  padding-left: 35px;
+  margin-bottom: 20px;
+}
+
+.about-bullet span {
+  font-family: poppins700;
+}
+
+.about-btn {
+  margin-top: 40px;
+  background-color: #32aa27;
+  color: white;
+  font-size: 1rem;
+  font-family: poppins600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 30px;
+  border: 2px solid #32aa27;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+.about-btn:hover {
+  background-color: white;
+  color: #32aa27;
+}
+
+.about-image {
+  width: 50%;
+  margin: 0 0 0 20px;
+  display: flex;
+  flex: 0 0 41.66667%;
+}
+
+.about-image div {
+  width: 100%;
+  height: 100% !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-image div::after {
+  content: "";
+  display: block;
+  padding-top: 130%;
+}
+
+@media (max-width: 1024px) {
+  .about-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-btn {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+  .about-content h1 {
+    font-size: 1.375rem;
+  }
+  .about-content {
+    width: 100%;
+    margin: 0;
+  }
+  .about-image {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .about-btn:hover {
+    background-color: #32aa27;
+    color: white;
+  }
+}

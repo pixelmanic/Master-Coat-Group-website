@@ -1,0 +1,205 @@
+.service-details {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: auto;
+  padding: 20px;
+}
+
+.sd-image {
+  flex: 0 0 33.33333%;
+  width: 100%;
+  margin: 0 20px 0 0;
+}
+
+.sd-image div {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.sd-image div::after {
+  content: "";
+  display: block;
+  padding-top: 130%;
+}
+
+.sd-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 0 0 20px;
+  width: 66.66667%;
+  text-align: start;
+}
+
+.sd-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 20px;
+  color: #32aa27;
+}
+
+.sd-content p {
+  font-size: 1rem;
+}
+
+.sd-btn {
+  margin-top: 40px;
+  background-color: #32aa27;
+  color: white;
+  font-size: 1rem;
+  font-family: poppins600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 30px;
+  border: 2px solid #32aa27;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.sd-btn:hover {
+  background-color: white;
+  color: #32aa27;
+}
+
+/* prefooter section starts */
+  .prefooter-section {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: auto;
+    padding: 20px;
+    background-color: #32AA27;
+  }
+
+  .prefooter-container {
+    justify-content: center !important;
+  }
+
+  .prefooter-content {
+    text-align: start;
+    color: white;
+    font-size: 1.5rem;
+    padding-right: 40px;
+  }
+
+  .prefooter-content h1 {
+    font-size: 4rem;
+    font-family: poppins600;
+    margin: 0 0 10px;
+  }
+
+  .prefooter-btn {
+    display: flex;
+    padding-left: 40px;
+  }
+
+  .prefooter-btn a {
+    background-color: #32AA27;
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    font-size: 1rem;
+    font-family: poppins600;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  .prefooter-btn a:hover {
+    background-color: white;
+    color: #32AA27;
+  }
+
+  
+/* prefooter section ends */
+
+@media (max-width: 1024px) {
+  .sd-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .prefooter-content {
+    font-size: 1rem;
+  }
+
+  .prefooter-content h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sd-wrapper {
+    flex-direction: column;
+  }
+
+  .sd-image {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+
+  .sd-content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .prefooter-container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .prefooter-content {
+    font-size: 1rem;
+    padding-right: 0;
+  }
+
+  .prefooter-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .prefooter-btn {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+
+  .prefooter-btn a {
+    font-size: 0.8rem;
+  }
+
+  .sd-btn:hover {
+    background-color: #32AA27;
+    color: white;
+  }
+
+  .prefooter-btn a:hover {
+    background-color: initial;
+    color: white;
+  }
+}
+
+@media (max-width: 528px) {
+  .sd-wrapper {
+    padding-bottom: 40px;
+  }
+  .sd-content h1 {
+    font-size: 1.2rem;
+  }
+  .sd-content p {
+    font-size: 0.9rem;
+  }
+  .sd-btn {
+    font-size: 0.8rem;
+  }
+}
