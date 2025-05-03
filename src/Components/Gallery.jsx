@@ -8,8 +8,6 @@ function Gallery() {
     galleryAnim();
   }, []);
 
-  console.log(process.env.REACT_APP_CLOUDINARY_CLOUD_NAME)
-
 const cloudName = process.env.REACT_APP_CLOUDINARY_CLOUD_NAME;
 const images = [
   "gallery1.jpg",
