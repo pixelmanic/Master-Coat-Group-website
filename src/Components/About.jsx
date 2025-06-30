@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "../Styles/About.css";
 import { Link } from "react-scroll";
-import aboutImg from "../Images/about-image.jpeg";
+import aboutImg from "../Images/about-image.webp";
 import LazyBackground from "./LazyBackground";
 import { aboutAnim } from "../Animations";
 
@@ -47,7 +47,6 @@ function About() {
           <Link
             key="contact"
             to="contact-section"
-            span={true}
             smooth={true}
             duration={800}
             offset={-70}

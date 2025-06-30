@@ -62,8 +62,26 @@ function Schedule() {
     <div className="intake">
       <div className="intake-container container">
         <Helmet>
-          <title>Schedule an Appointment</title>
+          <title>Schedule an Appointment | MasterCoat Group</title>
+          <meta
+            name="description"
+            content="Book a free consultation or schedule your painting and coating appointment with MasterCoat Group. Quick, easy, and professional service."
+          />
+          <meta
+            property="og:title"
+            content="Schedule an Appointment | MasterCoat Group"
+          />
+          <meta
+            property="og:description"
+            content="Easily schedule your painting service or consultation with MasterCoat Group. Serving homes and businesses."
+          />
+          <meta
+            property="og:url"
+            content="https://mastercoatgroup.com/scheduling"
+          />
+          <meta property="og:type" content="website" />
         </Helmet>
+
         <h3 className="intake-title sc-title">Meeting request form</h3>
         <h1 className="sc-subtitle">We look forward to meeting with you</h1>
         <form method="POST" onSubmit={handleSubmit} className="contact-form">

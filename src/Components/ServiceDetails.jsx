@@ -7,7 +7,7 @@ import { sdPageAnim } from "../Animations/pageAnim";
 function ServiceDetails() {
   useEffect(() => {
     sdPageAnim();
-  }, [])
+  }, []);
 
   const location = useLocation();
   const { service } = location.state || {};
@@ -37,7 +37,9 @@ function ServiceDetails() {
             <h3>We would love to hear from you!</h3>
           </div>
           <div className="prefooter-btn">
-            <Link to="/">get in touch</Link>
+            <Link key="contact" to="/" state={{ scrollToId: "contact-section" }}>
+              get in touch
+            </Link>
           </div>
         </div>
       </section>

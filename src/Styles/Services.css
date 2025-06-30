@@ -132,7 +132,7 @@
 
 @media (max-width: 768px) {
     .service-box {
-        flex: 0 0 100%;
+        flex: 0 0 50%;
     }
     .service-top {
         margin-bottom: 0;
@@ -158,4 +158,10 @@
       transition-duration: initial;
   }
   
+}
+
+@media (max-width: 528px) {
+  .service-box {
+    flex: 0 0 100%;
+  }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/Footer.css";
 import { Link } from "react-router-dom";
+import developer from "../Images/developer.png";
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -8,13 +9,19 @@ function Footer() {
     <section id="footer">
       <div className="footer-container container">
         <div className="footer-top">
-          <Link to="/scheduling" className="footer-btn hover-effect">Schedule Appointment</Link>
-          <Link to="/intake-form" className="footer-btn hover-effect">Complete Intake</Link>
-          <Link to="/careers" className="footer-btn hover-effect">Careers</Link>
+          <Link to="/scheduling" className="footer-btn hover-effect">
+            Schedule Appointment
+          </Link>
+          <Link to="/intake-form" className="footer-btn hover-effect">
+            Complete Intake
+          </Link>
+          <Link to="/careers" className="footer-btn hover-effect">
+            Careers
+          </Link>
         </div>
         <div className="footer-bottom">
           <a href="https://www.mastercoatgroup.com/">
-            MasterCoat Group {year} {" "}
+            MasterCoat Group {year}{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -34,6 +41,15 @@ function Footer() {
           </a>
         </div>
       </div>
+      <a
+        href="https://wa.me/923138386694"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="credit"
+      >
+        website by
+        <img src={developer} alt="developer" />
+      </a>
     </section>
   );
 }

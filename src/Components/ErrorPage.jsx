@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../Styles/ErrorPage.css";
+import { Helmet } from "react-helmet";
 
 function ErrorPage() {
   return (
     <div className="error-page">
+      <Helmet><title>Page not found</title></Helmet>
       <div className="error-container container">
         <h3 className="sc-title">404 Error</h3>
         <h1 className="sc-subtitle">Page not found</h1>

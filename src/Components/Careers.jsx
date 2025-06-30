@@ -61,7 +61,7 @@ function Careers() {
   ];
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     const serviceId = process.env.REACT_APP_EMAILJS_SERVICEID;
     const templateId = process.env.REACT_APP_EMAILJS_TEMPLATEID;
     const publicKey = process.env.REACT_APP_EMAILJS_PUBLICKEY;
@@ -111,7 +111,18 @@ function Careers() {
     <div className="intake">
       <div className="intake-container container">
         <Helmet>
-          <title>Careers page</title>
+          <title>Careers at MasterCoat Group | Join Our Team</title>
+          <meta
+            name="description"
+            content="Explore career opportunities at MasterCoat Group. We're always looking for skilled, motivated professionals to join our painting and coating team."
+          />
+          <meta property="og:title" content="Careers at MasterCoat Group" />
+          <meta
+            property="og:description"
+            content="Join our growing team of painting and coating professionals. Discover open positions at MasterCoat Group."
+          />
+          <meta property="og:url" content="https://mastercoatgroup.com/careers" />
+          <meta property="og:type" content="website" />
         </Helmet>
         <h3 className="intake-title sc-title">Join Our Team</h3>
         <h1 className="sc-subtitle">Explore opportunities. Grow with us.</h1>
@@ -244,7 +255,12 @@ function Careers() {
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
           <label className="form-checkbox">
-            <input type="checkbox" name="consent" required disabled={isSubmitted ? true : false}/>{" "}
+            <input
+              type="checkbox"
+              name="consent"
+              required
+              disabled={isSubmitted ? true : false}
+            />{" "}
             <span>
               I allow this website to store my submission so they can respond to
               my inquiry. <strong className="star">*</strong>

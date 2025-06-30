@@ -18,7 +18,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" state={{ scrollToId: "hero-section" }} className="logo">
-          MASTERCOAT GROUP
+          mastercoat Group
         </Link>
 
         <div className={`nav-links`}>

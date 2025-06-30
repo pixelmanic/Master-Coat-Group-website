@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -27,12 +27,16 @@ function Testimonials() {
         <div className="test-bottom">
           <Swiper
             key={Date.now()}
-            modules={[Navigation, Pagination]}
+            modules={[Navigation, Pagination, Autoplay]}
             navigation={{
               nextEl: ".custom-next",
               prevEl: ".custom-prev",
             }}
             pagination={{ clickable: true }}
+            autoplay={{
+              delay: 3000, // autoplay every 3 seconds
+              disableOnInteraction: true,
+            }}
             loop={true}
             slidesPerView={1}
             slidesPerGroup={1}

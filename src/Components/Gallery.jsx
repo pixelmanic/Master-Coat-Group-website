@@ -39,10 +39,9 @@ const sortedImages = images.sort((a, b) => {
           <div className="images-wrapper">
             {sortedImages &&
               sortedImages.map((name, index) => (
-                <Zoom>
+                <Zoom key={index}>
                   <img
                     className="gallery-image"
-                    key={index}
                     src={`https://res.cloudinary.com/${cloudName}/image/upload/${name}`}
                     alt={`Img ${index + 1}`}
                   />

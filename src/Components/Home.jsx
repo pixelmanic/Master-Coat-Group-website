@@ -11,6 +11,8 @@ import FAQ from "./FAQ";
 import Contact from "./Contact";
 import Getquote from "./Getquote";
 import { Helmet } from "react-helmet";
+import heroImg from "../Images/hero_image.webp"
+
 
 function Home() {
   const location = useLocation();
@@ -33,7 +35,24 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>MasterCoat Group</title>
+        <title>
+          MasterCoat Group | Expert Painting & Coating Services
+        </title>
+        <meta
+          name="description"
+          content="MasterCoat Group provides professional painting and coating services for residential, commercial, and industrial projects. Get a free quote today!"
+        />
+        <meta
+          property="og:title"
+          content="MasterCoat Group | Painting & Coating Experts"
+        />
+        <meta
+          property="og:description"
+          content="Reliable painting and coating services for homes, businesses, and industries. Quality guaranteed."
+        />
+        <meta property="og:image" content={heroImg} />
+        <meta property="og:url" content="https://mastercoatgroup.com/" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <Hero />
       <About />

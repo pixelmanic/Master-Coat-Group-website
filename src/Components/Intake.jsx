@@ -118,8 +118,26 @@ function Intake() {
     <div className="intake">
       <div className="intake-container container">
         <Helmet>
-          <title>Intake Form</title>
+          <title>Request a Quote | MasterCoat Group</title>
+          <meta
+            name="description"
+            content="Fill out the intake form to request a quote or consultation from MasterCoat Group. Fast and professional painting & coating services."
+          />
+          <meta
+            property="og:title"
+            content="Request a Quote | MasterCoat Group"
+          />
+          <meta
+            property="og:description"
+            content="Use our online form to schedule a consultation or get a price estimate. Serving residential, commercial, and industrial clients."
+          />
+          <meta
+            property="og:url"
+            content="https://mastercoatgroup.com/intake-form"
+          />
+          <meta property="og:type" content="website" />
         </Helmet>
+
         <h3 className="intake-title sc-title">Complete Intake</h3>
         <h1 className="sc-subtitle">Help us serve you better</h1>
         <form method="POST" onSubmit={handleSubmit} className="contact-form">
@@ -296,7 +314,12 @@ function Intake() {
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
           <label className="form-checkbox">
-            <input type="checkbox" name="consent" required disabled={isSubmitted ? true : false}/>{" "}
+            <input
+              type="checkbox"
+              name="consent"
+              required
+              disabled={isSubmitted ? true : false}
+            />{" "}
             <span>
               I allow this website to store my submission so they can respond to
               my inquiry. <strong className="star">*</strong>

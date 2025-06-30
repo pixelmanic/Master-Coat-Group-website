@@ -11,12 +11,10 @@ function Hero() {
     <section className='hero-section' style={{minHeight:"65vh"}}>
       <div className="hero-background"></div>
       <div className="hero-content">
-                <h1>Transform your space <br /> with mastercoat group</h1>
-                <h5>Your vision our mastery</h5>
+                <h1>Your trusted team for expert <br/> rendering & painting</h1>
                 <Link
                   key="services"
                   to="services-section"
-                  span={true}
                   smooth={true}
                   duration={500}
                   offset={-70}

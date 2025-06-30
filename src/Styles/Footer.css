@@ -27,6 +27,21 @@
   text-decoration: none;
 }
 
+.credit {
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  font-family: poppins400;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.credit img {
+  width: 100px;
+  margin-left: 5px;
+}
+
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
@@ -43,6 +58,9 @@
   }
   .footer-bottom a {
     font-size: 1.2rem;
+  }
+  .footer-bottom {
+    padding-bottom: 20px;
   }
 }
 

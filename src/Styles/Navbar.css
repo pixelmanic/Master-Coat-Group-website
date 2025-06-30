@@ -25,6 +25,7 @@ nav.navbar {
 .logo {
   font-size: 1.65rem;
   font-family: poppins700;
+  text-transform: uppercase;
   letter-spacing: 1px;
   color: white;
   z-index: 1000;

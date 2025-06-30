@@ -17,10 +17,10 @@
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.3)
     ),
-    url("../Images/hero_image.jpeg");
+    url("../Images/hero.webp");
   background-attachment: fixed;
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -64,6 +64,7 @@
   font-family: poppins700;
   line-height: 1.25;
   letter-spacing: 0px;
+  padding-bottom: 20px;
 }
 
 .hero-content h5 {
@@ -88,6 +89,12 @@
 .hero-btn:hover {
   background-color: transparent;
   border: 2px solid white;
+}
+
+@media (min-width: 1025px) and (max-width: 1124px) {
+  .hero-content h1 {
+    font-size: 3.275rem;
+  }
 }
 
 @media (max-width: 1024px) {
