@@ -42,8 +42,9 @@ const sortedImages = images.sort((a, b) => {
                 <Zoom key={index}>
                   <img
                     className="gallery-image"
-                    src={`https://res.cloudinary.com/${cloudName}/image/upload/${name}`}
+                    src={`https://res.cloudinary.com/${cloudName}/image/upload/q_auto,f_auto/${name}`}
                     alt={`Img ${index + 1}`}
+                    loading="lazy"
                   />
                 </Zoom>
               ))}
